@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Design</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+       
+        <link rel="stylesheet" href="css/mystyle.css">
+        <script src="js/myscripts.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="row  justify-content-md-center">
+              <div class="col">
+                <form      id ="formExample">
+                    <div class="form-group">
+                      <label for="firstName">First Name</label>
+                      <input type="text" class="form-control" id="firstName" aria-describedby="firstName" placeholder="First Name..." >
+                      <small class="text-danger" id="errorFirstName" hidden>
+                        Please input your first name
+                      </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" aria-describedby="lastName" >
+                        <small class="text-danger" id="errorLastName" hidden>
+                          Please input your last name
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="email">
+                        <small class="text-danger" id="errorEmail" hidden>
+                          Please input your email 
+                        </small>
+                    </div>
+
+        
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password">
+                      <small class="text-danger" id="errorPassword" hidden>
+                        Please input your password
+                      </small>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" >
+                        <label class="form-check-label" for="male">
+                          Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female" >
+                        <label class="form-check-label" for="female">
+                          Female
+                        </label>
+                        <br>  
+                        <small class="text-danger" id="errorGender" hidden>
+                          Please select your gender
+                        </small>
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="tos">
+                        <label class="form-check-label" for="tos">Accept terms and conditions</label>
+                        <br>
+                        <small class="text-danger" id="errorTos" hidden>
+                          You must accept the tos
+                        </small>
+                    </div>
+                    
+
+                    <label class="my-1 mr-2" for="skills">Choose skill</label>
+                    <select class="custom-select my-1 mr-sm-2" id="skills">
+                        <option selected>Choose...</option>
+                        <option value="java">Java</option>
+                        <option value="c++">C++</option>
+                        <option value="html">Html</option>
+                    </select>
+                    <small class="text-danger" id="errorSkills" hidden>
+                      Please select a skill
+                    </small>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>    
+    </body>
+</html>
